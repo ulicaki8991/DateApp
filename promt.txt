@@ -1,0 +1,21 @@
+Generate four creative date ideas tailored to the preferences provided.
+
+City: Varna
+
+Duration: Short
+
+Style: Relaxed
+
+Preferred activities:Vegan food walk
+
+Main theme: 11 years of weeding
+
+With this prompt, the API will generate four ideas for dates in the specified city, duration, style, preferred activities, and main theme. Each idea will be formatted as follows:
+
+Title|Location for Google Map|Description|Fun Scale|Creativity Scale|Physical Scale|Mainstream Scale|Romantic Scale
+
+make all the 4 ideas in one line
+
+For each idea, the Fun Scale, Creativity Scale, Physical Scale, Mainstream Scale, and Romantic Scale will be numeric values between 1 and 100, indicating the level of each aspect for the proposed date idea.
+
+Important: make it clean, without "' or any other symbol
