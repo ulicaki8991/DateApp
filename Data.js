@@ -175,7 +175,7 @@ function SendData() {
             mainstream1.value = ideasMainstreamScale[0];
             romantic1.value = ideasRomanticScale[0];
         } catch (e) {
-            console.log(e);
+            SendData();
         }
         let adress1 = ideasLocation[0].replaceAll(' ', '%').replaceAll(',', '');
         map1.innerHTML = `<iframe width="100%" height="100%" frameborder="0" scrolling="no"
@@ -195,7 +195,7 @@ function SendData() {
             mainstream2.value = ideasMainstreamScale[1];
             romantic2.value = ideasRomanticScale[1];
         } catch (e) {
-            console.log(e);
+            SendData();
         }
         let adress2 = ideasLocation[1].replaceAll(' ', '%').replaceAll(',', '');
         map2.innerHTML = `<iframe width="100%" height="100%" frameborder="0" scrolling="no"
@@ -216,7 +216,7 @@ function SendData() {
             mainstream3.value = ideasMainstreamScale[2];
             romantic3.value = ideasRomanticScale[2];
         } catch (e) {
-            console.log(e);
+            SendData();
         }
         let adress3 = ideasLocation[2].replaceAll(' ', '%').replaceAll(',', '');
         map3.innerHTML = `<iframe width="100%" height="100%" frameborder="0" scrolling="no"
@@ -237,7 +237,7 @@ function SendData() {
             mainstream4.value = ideasMainstreamScale[3];
             romantic4.value = ideasRomanticScale[3];
         } catch (e) {
-            console.log(e);
+            SendData();
         }
         let adress4 = ideasLocation[3].replaceAll(' ', '%').replaceAll(',', '');
         map4.innerHTML = `<iframe width="100%" height="100%" frameborder="0" scrolling="no"

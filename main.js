@@ -1,9 +1,15 @@
 
 
+
 let Screen1 = document.querySelector('#firstSection');
 let Screen2 = document.querySelector('#secondSection');
 let Screen3 = document.querySelector('#thiredSection');
 let Loader = document.querySelector('#loader');
+let logo = document.querySelector('#logo');
+
+document.querySelector("#logo").addEventListener('click', () => {
+    location.reload();
+});
 
 document.querySelector('#next_1').addEventListener('click', () => {
     Screen1.classList.toggle('hidden');
