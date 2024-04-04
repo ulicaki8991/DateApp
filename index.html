@@ -33,30 +33,32 @@
         <div class="flex flex-col lg:flex-row items-center justify-center mt-10 h-auto lg:h-96 gap-20">
             <label class="form-control w-full max-w-xs">
                 <div class="label">
-                    <span class="label label-text">Where you want your date? (Country / city)</span>
+                    <span class="label font-bold text-md  md:text-lg label-text">Where you want your date? (Country /
+                        city)</span>
                 </div>
                 <input id="city" type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
             </label>
 
             <label class="form-control w-full max-w-xs">
                 <div class="label">
-                    <span class="label label-text">What's the preferred duration of your date?</span>
+                    <span class="label font-bold text-md  md:text-lg  label-text">What's the preferred duration of your
+                        date?</span>
                 </div>
                 <div class="form-control">
-                    <label class="label cursor-pointer">
-                        <span class="span label-text">Short</span>
+                    <label class="label cursor-pointer btn btn-ghost p-2">
+                        <span class="span font-normal label-text">Short</span>
                         <input id="Short" type="radio" name="radio-1" class="radio checked:bg-red-500" checked />
                     </label>
                 </div>
                 <div class="form-control">
-                    <label class="label cursor-pointer">
-                        <span class="span label-text">a few hours</span>
+                    <label class="label cursor-pointer btn btn-ghost p-2">
+                        <span class="span font-normal label-text">a few hours</span>
                         <input id="few_hours" type="radio" name="radio-1" class="radio checked:bg-red-500" />
                     </label>
                 </div>
                 <div class="form-control">
-                    <label class="label cursor-pointer">
-                        <span class="span label-text">All day</span>
+                    <label class="label cursor-pointerbtn btn-ghost p-2">
+                        <span class="span font-normal label-text">All day</span>
                         <input id="All+day" type="radio" name="radio-1" class="radio checked:bg-red-500" />
                     </label>
                 </div>
@@ -67,18 +69,19 @@
 
             <label class="form-control w-full max-w-xs">
                 <div class="label">
-                    <span class="label label-text">Would you prefer a date that's more relaxing or one that's more
+                    <span class="label font-bold text-md  md:text-lg  label-text">Would you prefer a date that's more
+                        relaxing or one that's more
                         stimulating?</span>
                 </div>
                 <div class="form-control">
-                    <label class="label cursor-pointer">
-                        <span class="span label-text">Relaxed</span>
+                    <label class="label cursor-pointer btn btn-ghost p-2">
+                        <span class="span font-normal label-text">Relaxed</span>
                         <input id="Relaxed" type="radio" name="radio-2" class="radio checked:bg-red-500" checked />
                     </label>
                 </div>
                 <div class="form-control">
-                    <label class="label cursor-pointer">
-                        <span class="span label-text">Stimulated</span>
+                    <label class="label cursor-pointer btn btn-ghost p-2">
+                        <span class="span font-normal label-text">Stimulated</span>
                         <input id="Stimulated" type="radio" name="radio-2" class="radio checked:bg-red-500" />
                     </label>
                 </div>
@@ -286,9 +289,12 @@
 
         <label class="form-control w-full max-w-xs mt-10 mb-10">
             <div class="label">
-                <span class="label-text">Are there any specific themes you'd like to incorporate into your date?</span>
+                <span class="font-bold text-md  md:text-lg  label-text">Are there any specific themes you'd like to
+                    incorporate into your date?</span>
+
             </div>
             <textarea id="theme" class="textarea textarea-bordered" placeholder="Bio"></textarea>
+            <span class="mt-2 label-text-alt">Optional</span>
         </label>
 
 
@@ -339,7 +345,7 @@
 
     <div id="result" class="flex flex-col items-center hidden">
 
-        <h1 class="mt-10  font-bold text-[30px]">Ideas:</h1>
+        <h1 class="mt-10  font-bold text-[30px]">4 IDEA FOR DATE:</h1>
 
 
 
@@ -456,7 +462,7 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col mt-5">
+                    <div class="flex flex-col sm:mt-5">
                         <div>
                             <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Physical</p>
                             <progress id="physical2" class="progress progress-warning  w-full sm:w-40" value="40"
@@ -522,7 +528,7 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col mt-5">
+                    <div class="flex flex-col sm:mt-5">
                         <div>
                             <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Physical</p>
                             <progress id="physical3" class="progress progress-warning  w-full sm:w-40" value="40"
@@ -588,7 +594,7 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col mt-5">
+                    <div class="flex flex-col sm:mt-5">
                         <div>
                             <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Physical</p>
                             <progress id="physical4" class="progress progress-warning  w-full sm:w-40" value="40"
