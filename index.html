@@ -15,7 +15,7 @@
 
 <body>
     <!-- Header -->
-    <div class="flex flex-row justify-center relative top-2">
+    <div class="flex flex-row justify-center relative top-2 ">
         <div
             class="container bg-[#F7F8FC] w-screen sm:w-2/4 h-auto p-2 border-solid border-2 border-[#E2E8F0] rounded-[20px] grid grid-cols-3 ">
             <button class="cursor-pointer"><a href="https://twitter.com/MOulitzky"><img
@@ -25,6 +25,8 @@
         </div>
     </div>
 
+
+    <!-- First Sections -->
 
     <div id="firstSection" class="flex flex-col items-center ">
         <h1 class="h1 mt-10 font-bold text-[30px]">Explain your prefers</h1>
@@ -85,6 +87,11 @@
 
         <button id="next_1" class="btn btn-primary btn-wide mt-10">Next</button>
     </div>
+
+
+
+
+    <!-- TODO:   Serction 2 -->
 
     <div id="secondSection" class="flex flex-col items-center hidden">
         <h1 class="mt-10 font-bold text-[30px]">Explain your prefers</h1>
@@ -266,6 +273,11 @@
     </div>
 
 
+
+    <!-- TODO:   Serction 3 -->
+
+
+
     <div id="thiredSection" class="flex flex-col items-center hidden">
         <h1 class="mt-10 font-bold text-[30px]">Explain your prefers</h1>
 
@@ -334,59 +346,65 @@
 
 
         <div
-            class="container mt-10 bg-[#F7F8FC] border border-solid border-[2px] border-[#E2E8F0] w-5/6 h-auto flex flex-row grid grid-cols-3 items-center gap-4 rounded-[20px] p-4">
+            class="container mt-10 bg-[#F7F8FC] border-solid border-[2px] border-[#E2E8F0] w-5/6 h-auto flex flex-col sm:flex-row sm:grid sm:grid-cols-3 items-center gap-4 rounded-[20px] p-4">
 
-            <div class="col-span-1 h-full">
-                <div id="map1" class="h-full rounded-[15px] overflow-hidden"></div>
+            <div class="col-span-1 h-full w-full">
+                <div id="map1" class="h-full rounded-[15px] overflow-hidden">
+
+
+
+                </div>
             </div>
 
-            <div class="flex flex-col col-span-2">
+            <div class="flex flex-col  sm:col-span-2">
                 <div class="badge badge-primary">Free</div>
-                <p id="title1" class="font-bold text-[25px]">Walk near toilets</p>
+                <p id="title1" class="font-bold text-[23px] sm:text-[25px]">Walk near toilets</p>
                 <p id="location1" class="font-bold text-[15px]">location: Center of the city</p>
-                <p id="description1" class="font-bold text-[20px]">the idea: ansjdasnkd nask as dkasdlk asld asld
+                <p id="description1" class="sm:font-bold text-[15px] sm:text-[20px]">the idea: ansjdasnkd nask as
+                    dkasdlk
+                    asld asld
                     asjkdasjkd jkasdjkl
                     asdkljas djk asdjklasldk akd jkasdjkl asdkljas djk asdjklasldk akd jkasdjkl asdkljas djk asdjklasldk
                     a</p>
 
 
-                <div class="flex flex-row gap-10">
+                <div class="flex flex-col sm:flex-row sm:gap-10">
                     <div class="flex flex-col mt-5">
                         <div>
-                            <p class="font-bold text-[20px]">Fun</p>
-                            <progress id="fun1" class="progress progress-secondary w-40" value="40"
+                            <p class="font-bold text-center sm:text-left text-[15px] sm:text-[20px]">Fun</p>
+                            <progress id="fun1" class="progress progress-secondary w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
 
                         <div>
-                            <p class="font-bold text-[20px]">Price</p>
-                            <progress id="price1" class="progress progress-primary w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Price</p>
+                            <progress id="price1" class="progress progress-primary w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
 
                         <div>
-                            <p class="font-bold text-[20px]">Creativity</p>
-                            <progress id="creativity1" class="progress progress-accent w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Creativity</p>
+                            <progress id="creativity1" class="progress progress-accent w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
                     </div>
 
-                    <div class="flex flex-col mt-5">
+                    <div class="flex flex-col sm:mt-5">
                         <div>
-                            <p class="font-bold text-[20px]">Physical</p>
-                            <progress id="physical1" class="progress progress-warning w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Physical</p>
+                            <progress id="physical1" class="progress progress-warning w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
 
                         <div>
-                            <p class="font-bold text-[20px]">mainstream</p>
-                            <progress id="mainstream1" class="progress progress-success w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">mainstream</p>
+                            <progress id="mainstream1" class="progress progress-success w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
 
                         <div>
-                            <p class="font-bold text-[20px]">Romantic</p>
-                            <progress id="romantic1" class="progress progress-error w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Romantic</p>
+                            <progress id="romantic1" class="progress progress-error w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
                     </div>
@@ -400,59 +418,60 @@
 
 
         <div
-            class="container mt-10 bg-[#F7F8FC] border border-solid border-[2px] border-[#E2E8F0] w-5/6 h-auto flex flex-row grid grid-cols-3 items-center gap-4 rounded-[20px] p-4">
+            class="container mt-10 bg-[#F7F8FC] border-solid border-[2px] border-[#E2E8F0] w-5/6 h-auto flex flex-col sm:flex-row sm:grid sm:grid-cols-3 items-center gap-4 rounded-[20px] p-4">
 
-            <div class="col-span-1 h-full">
+            <div class="col-span-1 h-full w-full">
                 <div id="map2" class="h-full rounded-[15px] overflow-hidden"></div>
             </div>
 
             <div class="flex flex-col col-span-2">
                 <div class="badge badge-primary">Free</div>
-                <p id="title2" class="font-bold text-[25px]">Walk near toilets</p>
+                <p id="title2" class="font-bold text-[23px] sm:text-[25px]">Walk near toilets</p>
                 <p id="location2" class="font-bold text-[15px]">location: Center of the city</p>
-                <p id="description2" class="font-bold text-[20px]">the idea: ansjdasnkd nask as dkasdlk asld asld
+                <p id="description2" class="sm:font-bold text-[15px] sm:text-[20px]">the idea: ansjdasnkd nask as
+                    dkasdlk asld asld
                     asjkdasjkd jkasdjkl
                     asdkljas djk asdjklasldk akd jkasdjkl asdkljas djk asdjklasldk akd jkasdjkl asdkljas djk asdjklasldk
                     a</p>
 
 
-                <div class="flex flex-row gap-10">
+                <div class="flex flex-col sm:flex-row sm:gap-10">
                     <div class="flex flex-col mt-5">
                         <div>
-                            <p class="font-bold text-[20px]">Fun</p>
-                            <progress id="fun2" class="progress progress-secondary w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Fun</p>
+                            <progress id="fun2" class="progress progress-secondary  w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
 
                         <div>
-                            <p class="font-bold text-[20px]">Price</p>
-                            <progress id="price2" class="progress progress-primary w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Price</p>
+                            <progress id="price2" class="progress progress-primary  w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
 
                         <div>
-                            <p class="font-bold text-[20px]">Creativity</p>
-                            <progress id="creativity2" class="progress progress-accent w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Creativity</p>
+                            <progress id="creativity2" class="progress progress-accent  w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
                     </div>
 
                     <div class="flex flex-col mt-5">
                         <div>
-                            <p class="font-bold text-[20px]">Physical</p>
-                            <progress id="physical2" class="progress progress-warning w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Physical</p>
+                            <progress id="physical2" class="progress progress-warning  w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
 
                         <div>
-                            <p class="font-bold text-[20px]">mainstream</p>
-                            <progress id="mainstream2" class="progress progress-success w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">mainstream</p>
+                            <progress id="mainstream2" class="progress progress-success  w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
 
                         <div>
-                            <p class="font-bold text-[20px]">Romantic</p>
-                            <progress id="romantic2" class="progress progress-error w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Romantic</p>
+                            <progress id="romantic2" class="progress progress-error  w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
                     </div>
@@ -465,59 +484,60 @@
 
 
         <div
-            class="container mt-10 bg-[#F7F8FC] border border-solid border-[2px] border-[#E2E8F0] w-5/6 h-auto flex flex-row grid grid-cols-3 items-center gap-4 rounded-[20px] p-4">
+            class="container mt-10 bg-[#F7F8FC] border-solid border-[2px] border-[#E2E8F0] w-5/6 h-auto flex flex-col sm:flex-row sm:grid sm:grid-cols-3 items-center gap-4 rounded-[20px] p-4">
 
-            <div class="col-span-1 h-full">
+            <div class="col-span-1 h-full w-full">
                 <div id="map3" class="h-full rounded-[15px] overflow-hidden"></div>
             </div>
 
             <div class="flex flex-col col-span-2">
                 <div class="badge badge-primary">Free</div>
-                <p id="title3" class="font-bold text-[25px]">Walk near toilets</p>
+                <p id="title3" class="font-bold text-[23px] sm:text-[25px]">Walk near toilets</p>
                 <p id="location3" class="font-bold text-[15px]">location: Center of the city</p>
-                <p id="description3" class="font-bold text-[20px]">the idea: ansjdasnkd nask as dkasdlk asld asld
+                <p id="description3" class="sm:font-bold text-[15px] sm:text-[20px]">the idea: ansjdasnkd nask as
+                    dkasdlk asld asld
                     asjkdasjkd jkasdjkl
                     asdkljas djk asdjklasldk akd jkasdjkl asdkljas djk asdjklasldk akd jkasdjkl asdkljas djk asdjklasldk
                     a</p>
 
 
-                <div class="flex flex-row gap-10">
+                <div class="flex flex-col sm:flex-row sm:gap-10">
                     <div class="flex flex-col mt-5">
                         <div>
-                            <p class="font-bold text-[20px]">Fun</p>
-                            <progress id="fun3" class="progress progress-secondary w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Fun</p>
+                            <progress id="fun3" class="progress progress-secondary  w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
 
                         <div>
-                            <p class="font-bold text-[20px]">Price</p>
-                            <progress id="price3" class="progress progress-primary w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Price</p>
+                            <progress id="price3" class="progress progress-primary  w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
 
                         <div>
-                            <p class="font-bold text-[20px]">Creativity</p>
-                            <progress id="creativity3" class="progress progress-accent w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Creativity</p>
+                            <progress id="creativity3" class="progress progress-accent  w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
                     </div>
 
                     <div class="flex flex-col mt-5">
                         <div>
-                            <p class="font-bold text-[20px]">Physical</p>
-                            <progress id="physical3" class="progress progress-warning w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Physical</p>
+                            <progress id="physical3" class="progress progress-warning  w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
 
                         <div>
-                            <p class="font-bold text-[20px]">mainstream</p>
-                            <progress id="mainstream3" class="progress progress-success w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">mainstream</p>
+                            <progress id="mainstream3" class="progress progress-success  w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
 
                         <div>
-                            <p class="font-bold text-[20px]">Romantic</p>
-                            <progress id="romantic3" class="progress progress-error w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Romantic</p>
+                            <progress id="romantic3" class="progress progress-error  w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
                     </div>
@@ -530,59 +550,60 @@
 
 
         <div
-            class="container mt-10 bg-[#F7F8FC] border border-solid border-[2px] border-[#E2E8F0] w-5/6 h-auto flex flex-row grid grid-cols-3 items-center gap-4 rounded-[20px] p-4">
+            class="container mt-10 bg-[#F7F8FC] border-solid border-[2px] border-[#E2E8F0] w-5/6 h-auto flex flex-col sm:flex-row sm:grid sm:grid-cols-3 items-center gap-4 rounded-[20px] p-4">
 
-            <div class="col-span-1 h-full">
+            <div class="col-span-1 h-full w-full">
                 <div id="map4" class="h-full rounded-[15px] overflow-hidden"></div>
             </div>
 
             <div class="flex flex-col col-span-2">
                 <div class="badge badge-primary">Free</div>
-                <p id="title4" class="font-bold text-[25px]">Walk near toilets</p>
+                <p id="title4" class="font-bold text-[23px] sm:text-[25px]">Walk near toilets</p>
                 <p id="location4" class="font-bold text-[15px]">location: Center of the city</p>
-                <p id="description4" class="font-bold text-[20px]">the idea: ansjdasnkd nask as dkasdlk asld asld
+                <p id="description4" class="sm:font-bold text-[15px] sm:text-[20px]">the idea: ansjdasnkd nask as
+                    dkasdlk asld asld
                     asjkdasjkd jkasdjkl
                     asdkljas djk asdjklasldk akd jkasdjkl asdkljas djk asdjklasldk akd jkasdjkl asdkljas djk asdjklasldk
                     a</p>
 
 
-                <div class="flex flex-row gap-10">
+                <div class="flex flex-col sm:flex-row sm:gap-10">
                     <div class="flex flex-col mt-5">
                         <div>
-                            <p class="font-bold text-[20px]">Fun</p>
-                            <progress id="fun4" class="progress progress-secondary w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Fun</p>
+                            <progress id="fun4" class="progress progress-secondary  w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
 
                         <div>
-                            <p class="font-bold text-[20px]">Price</p>
-                            <progress id="price4" class="progress progress-primary w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Price</p>
+                            <progress id="price4" class="progress progress-primary  w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
 
                         <div>
-                            <p class="font-bold text-[20px]">Creativity</p>
-                            <progress id="creativity4" class="progress progress-accent w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Creativity</p>
+                            <progress id="creativity4" class="progress progress-accent  w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
                     </div>
 
                     <div class="flex flex-col mt-5">
                         <div>
-                            <p class="font-bold text-[20px]">Physical</p>
-                            <progress id="physical4" class="progress progress-warning w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Physical</p>
+                            <progress id="physical4" class="progress progress-warning  w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
 
                         <div>
-                            <p class="font-bold text-[20px]">mainstream</p>
-                            <progress id="mainstream4" class="progress progress-success w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">mainstream</p>
+                            <progress id="mainstream4" class="progress progress-success  w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
 
                         <div>
-                            <p class="font-bold text-[20px]">Romantic</p>
-                            <progress id="romantic4" class="progress progress-error w-40" value="40"
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Romantic</p>
+                            <progress id="romantic4" class="progress progress-error  w-full sm:w-40" value="40"
                                 max="100"></progress>
                         </div>
                     </div>
