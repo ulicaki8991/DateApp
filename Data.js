@@ -115,6 +115,9 @@ function SendData() {
     
     the scales need to be just numbers.
     write 4 ideas, and make them all in one line (without numbering theme).
+
+    example:
+    Garden Yoga Bliss|Sea Garden, Varna|Start your date with a serene outdoor yoga session in the lush surroundings of the Sea Garden, perfect for couples looking to find relaxation and connection through wellness.|70|80|60|50|75|
     
     For each idea, the Fun Scale, Creativity Scale, Physical Scale, Mainstream Scale, and Romantic Scale will be numeric values between 1 and 100, indicating the level of each aspect for the proposed date idea.
     
