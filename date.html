@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date builder</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.8.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/Font/stylesheet.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="flex flex-row justify-center relative top-2 ">
+        <div
+            class="container bg-[#F7F8FC] w-screen sm:w-2/4 h-auto p-2 border-solid border-2 border-[#E2E8F0] rounded-[20px] grid grid-cols-3 ">
+            <button class="cursor-pointer"><a href="https://twitter.com/MOulitzky"><img
+                        class="cust-button rounded-[11px] w-[43px]" src="img/x.png"></a></button>
+            <button id="logo" class="flex flex-row justify-center"><img class="w-[120px]" src="img/logo.png"></button>
+
+        </div>
+    </div>
+
+
+    <!-- First Sections -->
+
+    <div id="firstSection" class="flex flex-col items-center ">
+        <h1 class="h1 mt-10 font-bold text-[30px]">Explain your prefers</h1>
+        <div class="flex flex-col lg:flex-row items-center justify-center mt-10 h-auto lg:h-96 gap-20">
+            <label class="form-control w-full max-w-xs">
+                <div class="label">
+                    <span class="label font-medium text-md  md:text-lg label-text">Where you want your date? (Country /
+                        city)</span>
+                </div>
+                <input id="city" type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+            </label>
+
+            <label class="form-control w-full max-w-xs">
+                <div class="label">
+                    <span class="label font-medium text-md  md:text-lg  label-text">What's the preferred duration of
+                        your
+                        date?</span>
+                </div>
+                <div class="form-control">
+                    <label class="label cursor-pointer btn btn-ghost p-2">
+                        <span class="span font-normal label-text">Short</span>
+                        <input id="Short" type="radio" name="radio-1" class="radio checked:bg-red-500" checked />
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label class="label cursor-pointer btn btn-ghost p-2">
+                        <span class="span font-normal label-text">a few hours</span>
+                        <input id="few_hours" type="radio" name="radio-1" class="radio checked:bg-red-500" />
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label class="label cursor-pointerbtn btn-ghost p-2">
+                        <span class="span font-normal label-text">All day</span>
+                        <input id="All+day" type="radio" name="radio-1" class="radio checked:bg-red-500" />
+                    </label>
+                </div>
+            </label>
+
+
+
+
+            <label class="form-control w-full max-w-xs">
+                <div class="label">
+                    <span class="label font-medium text-md  md:text-lg  label-text">Would you prefer a date that's more
+                        relaxing or one that's more
+                        stimulating?</span>
+                </div>
+                <div class="form-control">
+                    <label class="label cursor-pointer btn btn-ghost p-2">
+                        <span class="span font-normal label-text">Relaxed</span>
+                        <input id="Relaxed" type="radio" name="radio-2" class="radio checked:bg-red-500" checked />
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label class="label cursor-pointer btn btn-ghost p-2">
+                        <span class="span font-normal label-text">Stimulated</span>
+                        <input id="Stimulated" type="radio" name="radio-2" class="radio checked:bg-red-500" />
+                    </label>
+                </div>
+            </label>
+        </div>
+
+        <button id="next_1" class="btn btn-primary btn-wide mt-10">Next</button>
+    </div>
+
+
+
+
+    <!-- TODO:   Serction 2 -->
+
+    <div id="secondSection" class="flex flex-col items-center hidden">
+        <h1 class="mt-10 font-bold text-[30px]">Explain your prefers</h1>
+
+
+        <div class="flex mt-12 flex-wrap content-center justify-center w-screen sm:w-3/4 xl:w-2/4">
+
+
+            <div class="btn m-5">
+                <label class="label cursor-pointer gap-1 lg:gap-3">
+                    <span class="span label-text">🥦 Vegan</span>
+                    <input type="checkbox" class="pref checkbox  checkbox-xs" />
+                </label>
+            </div>
+
+
+            <div class="btn m-5">
+                <label class="label cursor-pointer gap-1 lg:gap-3">
+                    <span class="span label-text">🎉 Entertainment</span>
+                    <input type="checkbox" class="pref checkbox  checkbox-xs" />
+                </label>
+            </div>
+
+            <div class="btn m-5">
+                <label class="label cursor-pointer gap-1 lg:gap-3">
+                    <span class="span label-text">🍽️ Dining</span>
+                    <input type="checkbox" class="pref checkbox  checkbox-xs" />
+                </label>
+            </div>
+
+            <div class="btn m-5">
+                <label class="label cursor-pointer gap-1 lg:gap-3">
+                    <span class="span label-text">🏞️ Outdoors</span>
+                    <input type="checkbox" class="pref checkbox  checkbox-xs" />
+                </label>
+            </div>
+
+
+            <div class="btn m-5">
+                <label class="label cursor-pointer gap-1 lg:gap-3">
+                    <span class="span label-text">🎨 Art & Culture</span>
+                    <input type="checkbox" class="pref checkbox  checkbox-xs" />
+                </label>
+            </div>
+
+
+
+            <div class="btn m-5">
+                <label class="label cursor-pointer gap-1 lg:gap-3">
+                    <span class="span label-text">💻 Technology</span>
+                    <input type="checkbox" class="pref checkbox  checkbox-xs" />
+                </label>
+            </div>
+
+
+            <div class="btn m-5">
+                <label class="label cursor-pointer gap-1 lg:gap-3">
+                    <span class="span label-text">🎭 Events & Shows</span>
+                    <input type="checkbox" class="pref checkbox  checkbox-xs" />
+                </label>
+            </div>
+
+
+            <div class="btn m-5">
+                <label class="label cursor-pointer gap-1 lg:gap-3">
+                    <span class="span label-text">🧘‍♂️ Wellness</span>
+                    <input type="checkbox" class="pref checkbox  checkbox-xs" />
+                </label>
+            </div>
+
+
+            <div class="btn m-5">
+                <label class="label cursor-pointer gap-1 lg:gap-3">
+                    <span class="span label-text">🎳 Hobbies & Crafts</span>
+                    <input type="checkbox" class="pref checkbox  checkbox-xs" />
+                </label>
+            </div>
+
+
+
+            <div class="btn m-5">
+                <label class="label cursor-pointer gap-1 lg:gap-3">
+                    <span class="span label-text">🐾 Pets & Animals</span>
+                    <input type="checkbox" class="pref checkbox  checkbox-xs" />
+                </label>
+            </div>
+
+            <div class="btn m-5">
+                <label class="label cursor-pointer gap-1 lg:gap-3">
+                    <span class="span label-text">📸 Photography</span>
+                    <input type="checkbox" class="pref checkbox  checkbox-xs" />
+                </label>
+            </div>
+
+
+            <div class="btn m-5">
+                <label class="label cursor-pointer gap-1 lg:gap-3">
+                    <span class="span label-text">🏰 History & Heritage</span>
+                    <input type="checkbox" class="pref checkbox  checkbox-xs" />
+                </label>
+            </div>
+
+
+
+
+            <div class="btn m-5">
+                <label class="label cursor-pointer gap-1 lg:gap-3">
+                    <span class="span label-text">🍹 Cocktails & Mixology</span>
+                    <input type="checkbox" class="pref checkbox  checkbox-xs" />
+                </label>
+            </div>
+
+
+
+
+            <div class="btn m-5">
+                <label class="label cursor-pointer gap-1 lg:gap-3">
+                    <span class="span label-text">🍷 Wine & Spirits</span>
+                    <input type="checkbox" class="pref checkbox  checkbox-xs" />
+                </label>
+            </div>
+
+
+
+            <div class="btn m-5">
+                <label class="label cursor-pointer gap-1 lg:gap-3">
+                    <span class="span label-text">🌍 World Cultures</span>
+                    <input type="checkbox" class="pref checkbox  checkbox-xs" />
+                </label>
+            </div>
+
+
+            <div class="btn m-5">
+                <label class="label cursor-pointer gap-1 lg:gap-3">
+                    <span class="span label-text">🎨 DIY & Crafts</span>
+                    <input type="checkbox" class="pref checkbox  checkbox-xs" />
+                </label>
+            </div>
+
+
+
+            <div class="btn m-5">
+                <label class="label cursor-pointer gap-1 lg:gap-3">
+                    <span class="span label-text">🚲 Cycling & Biking</span>
+                    <input type="checkbox" class="pref checkbox  checkbox-xs" />
+                </label>
+            </div>
+
+
+
+
+            <div class="btn m-5">
+                <label class="label cursor-pointer gap-1 lg:gap-3">
+                    <span class="span label-text">🌄 Adventure</span>
+                    <input type="checkbox" class="pref checkbox  checkbox-xs" />
+                </label>
+            </div>
+
+
+
+
+            <div class="btn m-5">
+                <label class="label cursor-pointer gap-1 lg:gap-3">
+                    <span class="span label-text">🍵 Tea & Infusions</span>
+                    <input type="checkbox" class="pref checkbox  checkbox-xs" />
+                </label>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+        <button id="next_2" class="btn btn-primary btn-wide mt-10">Next</button>
+    </div>
+
+
+
+    <!-- TODO:   Serction 3 -->
+
+
+
+    <div id="thiredSection" class="flex flex-col items-center hidden">
+        <h1 class="mt-10 font-bold text-[30px]">Explain your prefers</h1>
+
+
+
+
+        <label class="form-control w-full max-w-xs mt-10 mb-10">
+            <div class="label">
+                <span class="font-medium text-md  md:text-lg  label-text">Are there any specific themes you'd like to
+                    incorporate into your date?</span>
+
+            </div>
+            <textarea id="theme" class="textarea textarea-bordered" placeholder="Bio"></textarea>
+            <span class="mt-2 label-text-alt">Optional</span>
+        </label>
+
+
+
+
+        <button id="next_3" class="btn btn-primary btn-wide mt-10">Next</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Loader -->
+
+
+
+    <div id="loader" class="flex flex-col items-center hidden">
+
+        <h1 class="mt-10 font-bold text-[30px]">We are buiding you date</h1>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player
+            id="lot" src="https://lottie.host/55a48485-1da3-4ceb-90ea-8b8921fda754/vFW3kxSX4o.json"
+            background="##ffffff" speed="1" style="width: 300px; height: 300px" loop autoplay direction="1"
+            mode="normal"></lottie-player>
+
+        <h1 class="mt-10 font-bold text-[20px]">It will take couple seconds</h1>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- End Result -->
+
+
+    <div id="result" class="flex flex-col items-center hidden">
+
+        <h1 class="mt-10  font-bold text-[30px]">4 IDEA FOR DATE:</h1>
+
+
+
+
+
+        <div
+            class="container mt-10 bg-[#F7F8FC] border-solid border-[2px] border-[#E2E8F0] w-5/6 h-auto flex flex-col sm:flex-row sm:grid sm:grid-cols-3 items-center gap-4 rounded-[20px] p-4">
+
+            <div class="col-span-1 h-full w-full">
+                <div id="map1" class="h-full rounded-[15px] overflow-hidden">
+
+
+
+                </div>
+            </div>
+
+            <div class="flex flex-col  sm:col-span-2">
+                <div class="badge badge-primary">Free</div>
+                <p id="title1" class="font-bold text-[23px] sm:text-[25px]">Walk near toilets</p>
+                <p id="location1" class="font-bold text-[15px]">location: Center of the city</p>
+                <p id="description1" class="sm:font-bold text-[15px] sm:text-[20px]">the idea: ansjdasnkd nask as
+                    dkasdlk
+                    asld asld
+                    asjkdasjkd jkasdjkl
+                    asdkljas djk asdjklasldk akd jkasdjkl asdkljas djk asdjklasldk akd jkasdjkl asdkljas djk asdjklasldk
+                    a</p>
+
+
+                <div class="flex flex-col sm:flex-row sm:gap-10">
+                    <div class="flex flex-col mt-5">
+                        <div>
+                            <p class="font-bold text-center sm:text-left text-[15px] sm:text-[20px]">Fun</p>
+                            <progress id="fun1" class="progress progress-secondary w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Price</p>
+                            <progress id="price1" class="progress progress-primary w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Creativity</p>
+                            <progress id="creativity1" class="progress progress-accent w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:mt-5">
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Physical</p>
+                            <progress id="physical1" class="progress progress-warning w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">mainstream</p>
+                            <progress id="mainstream1" class="progress progress-success w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Romantic</p>
+                            <progress id="romantic1" class="progress progress-error w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+        <div
+            class="container mt-10 bg-[#F7F8FC] border-solid border-[2px] border-[#E2E8F0] w-5/6 h-auto flex flex-col sm:flex-row sm:grid sm:grid-cols-3 items-center gap-4 rounded-[20px] p-4">
+
+            <div class="col-span-1 h-full w-full">
+                <div id="map2" class="h-full rounded-[15px] overflow-hidden"></div>
+            </div>
+
+            <div class="flex flex-col col-span-2">
+                <div class="badge badge-primary">Free</div>
+                <p id="title2" class="font-bold text-[23px] sm:text-[25px]">Walk near toilets</p>
+                <p id="location2" class="font-bold text-[15px]">location: Center of the city</p>
+                <p id="description2" class="sm:font-bold text-[15px] sm:text-[20px]">the idea: ansjdasnkd nask as
+                    dkasdlk asld asld
+                    asjkdasjkd jkasdjkl
+                    asdkljas djk asdjklasldk akd jkasdjkl asdkljas djk asdjklasldk akd jkasdjkl asdkljas djk asdjklasldk
+                    a</p>
+
+
+                <div class="flex flex-col sm:flex-row sm:gap-10">
+                    <div class="flex flex-col mt-5">
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Fun</p>
+                            <progress id="fun2" class="progress progress-secondary  w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Price</p>
+                            <progress id="price2" class="progress progress-primary  w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Creativity</p>
+                            <progress id="creativity2" class="progress progress-accent  w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:mt-5">
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Physical</p>
+                            <progress id="physical2" class="progress progress-warning  w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">mainstream</p>
+                            <progress id="mainstream2" class="progress progress-success  w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Romantic</p>
+                            <progress id="romantic2" class="progress progress-error  w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div
+            class="container mt-10 bg-[#F7F8FC] border-solid border-[2px] border-[#E2E8F0] w-5/6 h-auto flex flex-col sm:flex-row sm:grid sm:grid-cols-3 items-center gap-4 rounded-[20px] p-4">
+
+            <div class="col-span-1 h-full w-full">
+                <div id="map3" class="h-full rounded-[15px] overflow-hidden"></div>
+            </div>
+
+            <div class="flex flex-col col-span-2">
+                <div class="badge badge-primary">Free</div>
+                <p id="title3" class="font-bold text-[23px] sm:text-[25px]">Walk near toilets</p>
+                <p id="location3" class="font-bold text-[15px]">location: Center of the city</p>
+                <p id="description3" class="sm:font-bold text-[15px] sm:text-[20px]">the idea: ansjdasnkd nask as
+                    dkasdlk asld asld
+                    asjkdasjkd jkasdjkl
+                    asdkljas djk asdjklasldk akd jkasdjkl asdkljas djk asdjklasldk akd jkasdjkl asdkljas djk asdjklasldk
+                    a</p>
+
+
+                <div class="flex flex-col sm:flex-row sm:gap-10">
+                    <div class="flex flex-col mt-5">
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Fun</p>
+                            <progress id="fun3" class="progress progress-secondary  w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Price</p>
+                            <progress id="price3" class="progress progress-primary  w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Creativity</p>
+                            <progress id="creativity3" class="progress progress-accent  w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:mt-5">
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Physical</p>
+                            <progress id="physical3" class="progress progress-warning  w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">mainstream</p>
+                            <progress id="mainstream3" class="progress progress-success  w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Romantic</p>
+                            <progress id="romantic3" class="progress progress-error  w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div
+            class="container mt-10 bg-[#F7F8FC] border-solid border-[2px] border-[#E2E8F0] w-5/6 h-auto flex flex-col sm:flex-row sm:grid sm:grid-cols-3 items-center gap-4 rounded-[20px] p-4">
+
+            <div class="col-span-1 h-full w-full">
+                <div id="map4" class="h-full rounded-[15px] overflow-hidden"></div>
+            </div>
+
+            <div class="flex flex-col col-span-2">
+                <div class="badge badge-primary">Free</div>
+                <p id="title4" class="font-bold text-[23px] sm:text-[25px]">Walk near toilets</p>
+                <p id="location4" class="font-bold text-[15px]">location: Center of the city</p>
+                <p id="description4" class="sm:font-bold text-[15px] sm:text-[20px]">the idea: ansjdasnkd nask as
+                    dkasdlk asld asld
+                    asjkdasjkd jkasdjkl
+                    asdkljas djk asdjklasldk akd jkasdjkl asdkljas djk asdjklasldk akd jkasdjkl asdkljas djk asdjklasldk
+                    a</p>
+
+
+                <div class="flex flex-col sm:flex-row sm:gap-10">
+                    <div class="flex flex-col mt-5">
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Fun</p>
+                            <progress id="fun4" class="progress progress-secondary  w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Price</p>
+                            <progress id="price4" class="progress progress-primary  w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Creativity</p>
+                            <progress id="creativity4" class="progress progress-accent  w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:mt-5">
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Physical</p>
+                            <progress id="physical4" class="progress progress-warning  w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">mainstream</p>
+                            <progress id="mainstream4" class="progress progress-success  w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+
+                        <div>
+                            <p class="font-bold  text-center sm:text-left text-[15px] sm:text-[20px]">Romantic</p>
+                            <progress id="romantic4" class="progress progress-error  w-full sm:w-40" value="40"
+                                max="100"></progress>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="Data.js" type="module"></script>
+<script src="main.js"></script>
+
+</html>
