@@ -16,6 +16,49 @@
 <body class="h-dvh flex flex-col justify-between">
 
 
+    <!-- Popup -->
+    <div id="fader"
+        class="transition-colors duration-500 ease-in-out fixed w-screen h-[100%] bg-[#00000000] z-20 flex justify-center items-center backdrop-blur-sm hidden ">
+
+        <div id="panel"
+            class="bg-[#F7F8FC] border-solid border-2 border-[#E2E8F0] rounded-[20px] w-full md:w-2/4 h-auto p-3 ">
+            <div class="flex flex-row justify-between items-center">
+                <p class="font-bold text-[#1F2937] text-[30px]">🚀 Hey, Date Planner! 🚀</p>
+                <button id="close" class="btn btn-square">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="flex gap-4 mt-4">
+
+
+                <img class="poptwit cursor-pointer hover:rotate-[-20deg] w-[80px] h-[80px] rounded-full transition-all hover:scale-[0.9]"
+                    src="img/av.jpeg" alt="">
+                <div class="w-3/4">
+                    <p>I'm <span class="poptwit cursor-pointer text-[#CC1E16]">Max</span>, the
+                        wizard behind the curtain
+                        of this date
+                        idea generator. Just one month into learning
+                        web development, and here I am, coding your next romantic adventure by day; by night, I tweet
+                        about the progress. 🌟</p>
+                </div>
+
+            </div>
+
+
+            <button class="poptwit z-10 mt-5 btn btn-error btn-wide bg-[#CC1E16] border-[#CC1E16] text-white">join
+                Twitter</button>
+        </div>
+
+    </div>
+
+
+
+
+
 
     <!-- elements -->
     <div class="absolute w-screen h-screen">
@@ -77,7 +120,26 @@
     </footer>
 
 
+
+
+    <!-- Information -->
+    <div id="info" class="fixed bottom-6 left-6 transition-all rotate-[5deg] hover:scale-[1.2]  hover:rotate-[-10deg]">
+        <div
+            class="help cursor-pointer container bg-[#F7F8FC] flex flex-row gap-8 items-center h-auto pt-2 pb-2 pl-3 pr-3 border-solid border-2 border-[#E2E8F0] rounded-[20px]">
+            <img class="w-[20px] h-[20px] scale-[3] rounded-full transition-all hover:scale-[2.5] hover:rotate-[-30deg]"
+                src="img/av.jpeg" alt="">
+            <p>Max?</p>
+
+        </div>
+    </div>
+
+
+
+
+
+
     <script src="mainPageLogic.js"></script>
+    <script src="popup.js"></script>
 </body>
 
 </html>
