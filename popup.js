@@ -24,7 +24,7 @@ document.addEventListener('keydown', function (event) {
 
 
 
-async function PopupAct() {
+export async function PopupAct() {
     if (state === -1) {
         state *= -1;
         let fader = document.querySelector("#fader");

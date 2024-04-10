@@ -18,12 +18,12 @@
 
     <!-- Popup -->
     <div id="fader"
-        class="transition-colors duration-500 ease-in-out fixed w-screen h-[100%] bg-[#00000000] z-20 flex justify-center items-center backdrop-blur-sm hidden ">
+        class="transition-colors duration-500 ease-in-out fixed w-screen h-[100%] bg-[#00000000] z-20 flex justify-center items-center backdrop-blur-sm  hidden">
 
         <div id="panel"
-            class="bg-[#F7F8FC] border-solid border-2 border-[#E2E8F0] rounded-[20px] w-full md:w-2/4 h-auto p-3 ">
-            <div class="flex flex-row justify-between items-center">
-                <p class="font-bold text-[#1F2937] text-[30px]">🚀 Hey, Date Planner! 🚀</p>
+            class="bg-[#F7F8FC] border-solid border-2 border-[#E2E8F0] rounded-[20px] w-full md:w-2/4 h-auto p-3 flex flex-col items-center">
+            <div class="flex flex-row w-full justify-between items-center">
+                <p class="font-bold text-[#1F2937] text-[30px]">Hey, Date Planner! 🚀</p>
                 <button id="close" class="btn btn-square">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -42,15 +42,19 @@
                         wizard behind the curtain
                         of this date
                         idea generator. Just one month into learning
-                        web development, and here I am, coding your next romantic adventure by day; by night, I tweet
+                        web development, and here I am, coding your next romantic adventure by day; by night, I tweeting
                         about the progress. 🌟</p>
+
+
                 </div>
 
             </div>
 
 
-            <button class="poptwit z-10 mt-5 btn btn-error btn-wide bg-[#CC1E16] border-[#CC1E16] text-white">join
+            <button class="poptwit z-10 mt-5 mb-5 btn btn-error btn-wide bg-[#CC1E16] border-[#CC1E16] text-white">join
                 Twitter</button>
+            <p class="text-center">This project are fully free and the only thing that i am asking are follow on twitter
+            </p>
         </div>
 
     </div>
@@ -124,7 +128,7 @@
 
     <!-- Information -->
     <div id="info"
-        class="fixed bottom-12 sm:bottom-6 left-6 transition-all rotate-[5deg] hover:scale-[1.2]  hover:rotate-[-10deg]">
+        class="fixed bottom-12 sm:bottom-6 left-6 transition-all rotate-[5deg] hover:scale-[1.2] z-30 hover:rotate-[-10deg]">
         <div
             class="help cursor-pointer container bg-[#F7F8FC] flex flex-row gap-8 items-center h-auto pt-2 pb-2 pl-3 pr-3 border-solid border-2 border-[#E2E8F0] rounded-[20px]">
             <img class="w-[20px] h-[20px] scale-[3] rounded-full transition-all hover:scale-[2.5] hover:rotate-[-30deg]"

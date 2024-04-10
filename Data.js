@@ -1,4 +1,4 @@
-
+import { PopupAct } from "./popup.js";
 
 let City;
 let Duration;
@@ -88,6 +88,8 @@ document.querySelector('#next_3').addEventListener('click', () => {
     Theme = document.querySelector('#theme').value;
     SendData();
 });
+
+
 
 function SendData() {
     console.log('Start Send Data');
@@ -257,6 +259,10 @@ function SendData() {
         Result.classList.toggle('hidden');
 
         jsConfetti.addConfetti({ confettiNumber: 500, });
+
+        setTimeout(() => {
+            PopupAct();
+        }, 8000);
 
     }).catch((error) => {
         console.log('error: ', error);

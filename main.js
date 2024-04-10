@@ -7,7 +7,13 @@ let Screen3 = document.querySelector('#thiredSection');
 let Loader = document.querySelector('#loader');
 let logo = document.querySelector('#logo');
 
+
+
 document.querySelector("#logo").addEventListener('click', () => {
+    location.reload();
+});
+
+document.querySelector("#reloadButton").addEventListener('click', () => {
     location.reload();
 });
 
@@ -24,7 +30,10 @@ document.querySelector('#next_2').addEventListener('click', () => {
 document.querySelector('#next_3').addEventListener('click', () => {
     Screen3.classList.toggle('hidden');
     Loader.classList.toggle('hidden');
-
+    setTimeout(() => {
+        document.querySelector("#reloader").classList.toggle("hidden");
+        document.querySelector("#coupleMin").classList.toggle("hidden");
+    }, 35000);
 
 });
 
