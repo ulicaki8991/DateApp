@@ -19,7 +19,7 @@ function sleep(ms) {
 
 
 
-export async function PopupAct() {
+async function PopupAct() {
 
     if (state === -1) {
         state *= -1;
